@@ -576,9 +576,9 @@ footer{
     }
     header .write_letter{
         height: 20px;
-        width: 150px;
-        margin-right: 0;
-        margin-left: 0;
+        width: 1170px;
+        margin-right: auto;
+        margin-left: auto;
         margin-top: 55px;
 	}
     .write_letter img{
@@ -2715,6 +2715,9 @@ footer{
     .footer_top ul li {
 
         display: block;
+    }
+    header .write_letter{
+        width: 100%;
     }
 }
 
