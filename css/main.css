@@ -59,6 +59,7 @@ body {
     font: 13px Arial, sans-serif;
     background-color: #fff;
     color: #000;
+    padding-bottom: 0 !important;
 }
 
 a {
@@ -313,7 +314,7 @@ table {
 footer{
     bottom: 0;
     width: 100%;
-    position: absolute;
+    padding-top: 50px;
 }
 .footer_top_inner{
     width: 1170px;
@@ -2686,7 +2687,35 @@ footer{
     .footer_top ul li {
         padding-right: 0px;
     }
-}
 
+    header .search_form h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    header .search_form{
+        width: 100%;
+    }
+    header .input-group{
+        width: 100%;
+    }
+    .header_outer_top {
+        height: 100%;
+    }
+    .header_inner_top ul {
+        padding-left: 0;
+    }
+    .header_inner_top ul li {
+        padding-top: 4px;
+
+    }
+    .header_inner_top ul li {
+        font-size: 9px;
+    }
+    .footer_top ul li {
+
+        display: block;
+    }
+}
 
 
