@@ -5,6 +5,7 @@
     <title>Podillya Plem Service</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slicknav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 </head>
@@ -29,7 +30,7 @@
     <div class="header_outer_bottom clearfix">
         <div class="header_inner_bottom clearfix">
             <p>ПАТ</p>
-            <ul>
+            <ul id="menu">
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="products.html">Товары</a></li>
                 <li><a href="groups.html">Группы</a></li>
@@ -207,12 +208,20 @@
 </footer>
 
 	<!-- Scripts -->
+
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+<script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
 	<script src="js/scrollSlider.jquery.js"></script>
-	<script>
+	<!--<script>
 	    $('#scrollSlider').scrollSlider({thumbSize:138});
-	</script>
+	</script>-->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFD6G47X8auHLzrQktj6BcZzpeR1Yym48&callback=initMap"
     async defer></script>
