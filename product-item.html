@@ -57,7 +57,55 @@
                 </div>
             </div>
             <div class="write_letter">
-                <a href="#"><img src="img/writeletter.png">Написать письмо</a></div>
+                <label for="popupCheckboxOne" class="popup-shower"><img src="img/writeletter.png">Написать
+                    письмо</label>
+            </div>
+            <div class="popup-wrapper">
+                <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+
+                <div class="popup">
+                    <div class="popup-content clearfix">
+                        <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+
+                        <h2>Написать сообщение</h2>
+
+                        <form>
+                            <div class="popup_right">
+                                <div class="destination">
+                                    <p>Город доставки</p>
+                                    <input type="text" placeholder="Город" required>
+                                </div>
+                                <div class="email">
+                                    <p>Ваш e-mail </p>
+                                    <input type="text" placeholder="Email" required>
+                                </div>
+                            </div>
+
+                            <div class="popup_left">
+                                <div class="name">
+                                    <p>Ваше ФИО</p>
+                                    <input type="text" placeholder="ФИО" required>
+                                </div>
+                                <div class="tel_number">
+                                    <p>Ваш телефон </p>
+                                    <input type="text" placeholder="Телефон" required>
+                                </div>
+                            </div>
+
+
+                            <div class="message">
+                                <p>Написать сообщение</p>
+                                <textarea> </textarea>
+                                <button>Отправить</button>
+                                <p>Отправить запрос, вы потдтвердить согласие с пользовательским<br>
+                                    согласием</p>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
