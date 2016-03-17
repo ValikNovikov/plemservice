@@ -525,7 +525,7 @@ footer{
         padding-top: 130px;
         margin-left: auto;
         margin-right: auto;
-        width: 450px;
+        width: 460px;
     }
     header  .search_form h1{
          color: white;
@@ -554,7 +554,7 @@ footer{
         position: absolute;
 		margin-left: 0px;
 		width: 286px;
-		height: 33px;
+		height: 34px;
     }
 
     header .search_form input:focus {
@@ -585,11 +585,134 @@ footer{
         width: 30px;
         padding-right: 6px;
     }
-    .write_letter a{
+    .write_letter label{
         color: white;
+        text-decoration: none;
     }
 
 
+
+  /*--------pop-up---------*/
+
+.popup-checkbox, .popup {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.popup:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+}
+
+.popup-content {
+    width:585px;
+    height: 585px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.popup_left input{
+    width: 250px;
+    height: 45px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.popup_left{
+ float: left;
+}
+.popup_right{
+float: right;
+}
+
+.popup_right input{
+    width: 250px;
+    height: 45px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.popup-content textarea{
+    width: 540px;
+    height: 120px;
+    border-radius: 3px;
+
+}
+textarea{
+    resize:none;
+}
+.popup-content button{
+    color: white;
+    background:#213d31 ;
+    width: 540px;
+    height: 40px;
+    margin-top: 40px;
+}
+.popup-shower:hover {
+    color: #775331;
+}
+
+.popup-closer {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #999;
+    font-size: 30px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup-closer:hover {
+    background-color: #eee;
+}
+.popup-checkbox:checked + .popup {
+    opacity: 1;
+    display: block;
+}
+.message{
+    text-align: center;
+}
+.message p{
+    color:#213d31;
+}
+.inputs{
+    margin-top: 50px;
+}
+.popup-content h2{
+    text-align: center;
+    color: #775331;
+}
+
+/*--------pop-up---------*/
 
 /* --------------breadcumbs (on pages:about-us, price-list, groups)--------------*/
 	.breadcumbs {
@@ -2630,16 +2753,140 @@ footer{
 
   /*-500px-*/
 	@media  screen and (min-width : 500px) and (max-width : 575px) {
-
+        header .input-group{
+            width: 100% !important;
+        }
+        .popup-content{
+            width: 70%;
+            height: 85%;
+        }
+        .popup-content textarea{
+            width: 100%;
+        }
+        .popup-content button{
+            width: 100%;
+        }
+        .popup_left{
+            width: 100%;
+            text-align: center;
+        }
+        .popup_right{
+            width: 100%;
+            text-align: center;
+        }
+        .popup_left input{
+            width: 100%;
+        }
+        .popup_right input{
+            width: 100%;
+        }
+        .popup_right p{
+            display: none;
+        }
+        .popup_left p{
+            display: none;
+        }
+        .popup-content h2{
+            font-size: 10px;
+        }
+        .popup-content textarea{
+            height: 60px;
+        }
+        .popup-content button{
+            margin-top: 0;
+        }
 	}
 
   /*-400px-*/
 	@media  screen and (min-width : 400px) and (max-width : 500px) {
-
+        header .input-group{
+            width: 100% !important;
+        }
+        .popup-content{
+            width: 70%;
+            height: 70%;;
+        }
+        .popup-content textarea{
+            width: 100%;
+        }
+        .popup-content button{
+            width: 100%;
+        }
+        .popup_left{
+            width: 100%;
+            text-align: center;
+        }
+        .popup_right{
+            width: 100%;
+            text-align: center;
+        }
+        .popup_left input{
+            width: 100%;
+        }
+        .popup_right input{
+            width: 100%;
+        }
+        .popup_right p{
+            display: none;
+        }
+        .popup_left p{
+            display: none;
+        }
+        .popup-content h2{
+            font-size: 10px;
+        }
+        .popup-content textarea{
+            height: 60px;
+        }
+        .popup-content button{
+            margin-top: 0;
+        }
 	}
 
   /*-300px-*/
 	@media  screen and (min-width : 320px) and (max-width : 400px) {
+        header .input-group{
+            width: 100% !important;
+        }
+        .popup-content{
+            width: 70%;
+            height: 85%;
+        }
+        .popup-content textarea{
+            width: 100%;
+        }
+        .popup-content button{
+            width: 100%;
+        }
+        .popup_left{
+            width: 100%;
+            text-align: center;
+        }
+        .popup_right{
+            width: 100%;
+            text-align: center;
+        }
+        .popup_left input{
+            width: 100%;
+        }
+        .popup_right input{
+            width: 100%;
+        }
+        .popup_right p{
+            display: none;
+        }
+        .popup_left p{
+            display: none;
+        }
+        .popup-content h2{
+            font-size: 10px;
+        }
+        .popup-content textarea{
+            height: 60px;
+        }
+        .popup-content button{
+            margin-top: 0;
+        }
 
 	}
 
@@ -2647,6 +2894,17 @@ footer{
 
 .slicknav_menu {
     display:none;
+}
+@media screen and (max-width: 1200px) {
+    .footer_top_inner {
+        width: 100%;
+    }
+    .footer_bottom_inner{
+        width: 100%;
+    }
+    .write_letter{
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -2697,10 +2955,10 @@ footer{
         width: 100%;
     }
     header .input-group{
-        width: 100%;
+        width: 50%;
     }
     .header_outer_top {
-        height: 100%;
+        height: 50%;
     }
     .header_inner_top ul {
         padding-left: 0;
@@ -2719,6 +2977,16 @@ footer{
     header .write_letter{
         width: 100%;
     }
+    .footer_top_inner {
+        width: 100%;
+    }
+    .footer_bottom_inner{
+        width: 100%;
+    }
+    .header .write_letter{
+        width: 100%;
+    }
+
 }
 
 
